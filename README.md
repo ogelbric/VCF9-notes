@@ -1,5 +1,6 @@
 # VCF9 notes 
 
+My Random notes on the install with the new VCF insaller (replces the spread sheet) 
 
 
 ```
