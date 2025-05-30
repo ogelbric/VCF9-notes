@@ -26,9 +26,13 @@ ESXi Servers (3) are:
 # VCF installer
 
 ```
+Installer VM deployment
+```
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install1.png)
+
+```
 Note!!! the installer is not the SDDC manager!
 Hence the 192.168.1.23 address arrggg... :-(
-
 ```
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install00.png)
