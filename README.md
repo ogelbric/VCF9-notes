@@ -3,7 +3,7 @@
 
 
 ```
-Each ESXi (3) are:
+ESXi Servers (3) are:
   24 CPU
   144 GB RAM
   1TB Disk
@@ -13,5 +13,12 @@ Each ESXi (3) are:
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ESXi2.png)
 
+```
+VCF installer
+```
 
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install1.png)
 
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install2.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install3.png)
