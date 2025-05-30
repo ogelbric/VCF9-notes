@@ -82,3 +82,16 @@ Repeat this procedure for all remaining hosts and restart the task on cloud buil
 ```
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install3.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install4.png)
+
+## VCF install
+
+```
+Running the first test, but since I dont have the bits in the depot it stops
+```
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/InstallTest1.png)
+
+
+
