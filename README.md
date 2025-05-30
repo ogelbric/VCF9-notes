@@ -2,6 +2,15 @@
 
 My Random notes on the install with the new VCF insaller (replces the spread sheet) 
 
+## DNS
+
+```
+DNS set up lab.local domain
+```
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/DNS1.png)
+
+## ESXi
 
 ```
 ESXi Servers (3) are:
