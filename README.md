@@ -14,11 +14,29 @@ ESXi Servers (3) are:
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ESXi2.png)
 
+# VCF installer
+
 ```
-VCF installer
+Note!!! the installer is not the SDDC manager!
+Hence the 192.168.1.23 address arrggg... :-(
+
 ```
 
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install00.png)
+
+```
+The left and the right button can be done in parallel
+In my case I am waiting for the tocken to down load
+```
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install0.png)
+
+
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install1.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/Install2.png)
+
+
 
 ```
 How to get beyon this issue when the ESXi server is installed and upon boot get some strange DHCP address and you rename and re-IP the server.
