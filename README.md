@@ -167,4 +167,7 @@ Enter UserEmail : my-e-mail@broadcom.com
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esacert0.png)
 
+Looks like the fix is documented here (I'll have to check it out):
+
+https://williamlam.com/2023/11/custom-vsan-hcl-json-for-vmware-cloud-foundation-vcf-5-1-and-vsan-esa-using-nested-esxi.html#:~:text=Step%201%20%2D%20You%20will%20need,all.json)%20from%20VMware.
 
