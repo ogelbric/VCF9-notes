@@ -93,5 +93,13 @@ Running the first test, but since I dont have the bits in the depot it stops
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/InstallTest1.png)
 
+## Notes on how to update the appliance for different depots
+
+```
+Get onto the console of the appliance with set root password during install
+Enable ssh
+in the /etc/sshd/sshd_config file set PermitRootLogin yes
+
+
 
 
