@@ -141,3 +141,14 @@ Enter UserEmail : my-e-mail@broadcom.com
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/depot5.png)
 
+## Fixing NTP on the 3 ESXi hosts
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ntp1.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ntp2.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ntp3.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ntp4.png)
+
+
