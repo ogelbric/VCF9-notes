@@ -118,7 +118,15 @@ systemctl restart {domainmanager.service,lcm.service}
 Details I can not post here but send me an e-mail orf.gelbrich@broadcom.com
 ```
 
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/depot1.png)
 
 
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/depot2.png)
+
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/depot3.png)
+
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/depot4.png)
 
 
