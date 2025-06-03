@@ -93,12 +93,31 @@ Running the first test, but since I dont have the bits in the depot it stops
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/InstallTest1.png)
 
-## Notes on how to update the appliance for different depots
+## Notes on how to update the appliance for root login
 
 ```
 Get onto the console of the appliance with set root password during install
 Enable ssh
 in the /etc/sshd/sshd_config file set PermitRootLogin yes
+```
+## Notes on how to point to STG depot
+
+```
+cp  /opt/vmware/vcf/lcm/lcm-app/conf/application-prod.properties  /opt/vmware/vcf/lcm/lcm-app/conf/application-prod.properties.bak.orf
+
+vi /opt/vmware/vcf/lcm/lcm-app/conf/application-prod.properties
+
+lcm.depot.adapter.host=dl-pstg.broadcom.com
+lcm.depot.adapter.remote.vcfMetadataDir=/metadata-ob-24755599
+
+systemctl restart {domainmanager.service,lcm.service}
+```
+## After that update the depot with the stg token/key (generatetoken.ps1)
+
+```
+Details I can not post here but send me an e-mail orf.gelbrich@broadcom.com
+```
+
 
 
 
