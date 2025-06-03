@@ -151,4 +151,12 @@ Enter UserEmail : my-e-mail@broadcom.com
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ntp4.png)
 
+## ESA Disks on the ESXi servers (Data - 1000GB / Cache - 100GB) 
 
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esa1.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esa2.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esa3.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esa4.png)
