@@ -163,4 +163,8 @@ Enter UserEmail : my-e-mail@broadcom.com
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esa5.png)
 
+## ESSA Cert disk needed 
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esacert0.png)
+
 
