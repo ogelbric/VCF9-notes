@@ -116,6 +116,16 @@ systemctl restart {domainmanager.service,lcm.service}
 
 ```
 Details I can not post here but send me an e-mail orf.gelbrich@broadcom.com
+
+but it looks something like this:
+
+Enter DepotTier (Production or Staging): Staging
+Enter ClientId: 7Sxblablabal
+Enter ClientSecret: PMySecretQaG
+Enter UserEmail : my-e-mail@broadcom.com
+[INFO] Staging tier download token: cMyTokenfor24hoursN
+
+
 ```
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/depot1.png)
