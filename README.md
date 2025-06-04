@@ -221,7 +221,7 @@ Bingo - William Lam(s) stuff works !
 
 ## Tracking down MTU issues
 
-![Version](https://github.com/ogelbric/VCF9-notes/blob/main/metuissues1.png)
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/mtuissues1.png)
 
 
 ```
