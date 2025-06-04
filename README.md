@@ -189,4 +189,12 @@ scp nested-vsan-esa-mock-hw.vib root@192.168.1.52:/tmp/.
 scp nested-vsan-esa-mock-hw.vib root@192.168.1.53:/tmp/.
 ```
 
+On each ESXi server run 
+
+```
+esxcli software acceptance set --level CommunitySupported
+
+
+
+```
 
