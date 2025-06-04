@@ -218,3 +218,38 @@ For good measure I restarted the vsan mgt
 Bingo - William Lam(s) stuff works !
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esa-works.png)
+
+## Tracking down MTU issues
+
+```
+My Windows router with all interfaces
+All running jumbo
+
+netsh interface ipv4 show subinterfaces
+
+   MTU  MediaSenseState   Bytes In  Bytes Out  Interface
+------  ---------------  ---------  ---------  -------------
+4294967295                1          0          0  Loopback Pseudo-Interface 1
+  1500                1  191869171301  4133843676  Ethernet0
+  9000                1       7686       1846  Ethernet1
+  9000                1      21864       5466  Ethernet2
+  9000                1      39867       8807  Ethernet3
+  9000                1      88169      17999  Ethernet4
+  9000                1      55453      11983  Ethernet5
+  9000                1      70443      14883  Ethernet6
+
+```
+
+Checking from the ESXi server - not good 
+
+```
+vmkping -d  -s 1500  192.168.6.1
+PING 192.168.6.1 (192.168.6.1): 1500 data bytes
+sendto() failed (Message too long)
+sendto() failed (Message too long)
+sendto() failed (Message too long)
+
+--- 192.168.6.1 ping statistics ---
+3 packets transmitted, 0 packets received, 100% packet loss
+
+```
