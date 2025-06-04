@@ -315,4 +315,28 @@ I set the modes on the ESXi servers as well
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esxihostaccept1.png)
 
+## Overall Network 
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esxihostnaetworks1.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/net1-6.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink0.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink1.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink2.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink3.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink4.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink5.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink6.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink61.png)
+
+
+
 
