@@ -264,9 +264,11 @@ The 3 ESXi servers are on all of these networks
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esxinetworks1.png)
 
-Making sure since this is nested that all my port groups have this set
+Making sure since this is nested that all my port groups have this set 
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/makesure1.png)
+
+Base switch shows me MTU 9000
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/makesure2.png)
 
