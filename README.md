@@ -171,3 +171,7 @@ Looks like the fix is documented here (I'll have to check it out):
 
 https://williamlam.com/2023/11/custom-vsan-hcl-json-for-vmware-cloud-foundation-vcf-5-1-and-vsan-esa-using-nested-esxi.html#:~:text=Step%201%20%2D%20You%20will%20need,all.json)%20from%20VMware.
 
+Looks like this is the better more concistent way of addressing the ESA disk issue
+
+https://williamlam.com/2025/02/vsan-esa-hardware-mock-vib-for-physical-esxi-deployment-for-vmware-cloud-foundation-vcf.html
+
