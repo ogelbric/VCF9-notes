@@ -197,7 +197,9 @@ esxcli software vib install -v /tmp/nested-vsan-esa-mock-hw.vib --no-sig-check
 
 /etc/init.d/vsanmgmtd restart
 
-
-
+```
+If needed the removal
+```
+esxcli software vib remove -n nested-vsan-esa-mock-hw
 ```
 
