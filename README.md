@@ -175,3 +175,6 @@ Looks like this is the better more concistent way of addressing the ESA disk iss
 
 https://williamlam.com/2025/02/vsan-esa-hardware-mock-vib-for-physical-esxi-deployment-for-vmware-cloud-foundation-vcf.html
 
+Downloaded vib from here:
+
+https://github.com/lamw/nested-vsan-esa-mock-hw-vib/releases
