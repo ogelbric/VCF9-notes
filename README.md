@@ -202,4 +202,12 @@ If needed the removal
 ```
 esxcli software vib remove -n nested-vsan-esa-mock-hw
 ```
+Changed my 2 Disks x # ESXi servers to NVMe controller (Created the controller first) disks (yes had to delete the disks and recreate them) 
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/disk0.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/disk1.png)
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/disk2.png)
+
 
