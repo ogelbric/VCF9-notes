@@ -221,6 +221,9 @@ Bingo - William Lam(s) stuff works !
 
 ## Tracking down MTU issues
 
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/metuissues1.png)
+
+
 ```
 My Windows router with all interfaces
 All running jumbo
