@@ -259,3 +259,7 @@ sendto() failed (Message too long)
 Windows box is on all these networks 
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/windowsnetworks1.png)
+
+The 3 ESXi servers are on all of these networks
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esxinetworks1.png)
