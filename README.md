@@ -337,6 +337,14 @@ I set the modes on the ESXi servers as well
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/uplink61.png)
 
+## All Green
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/allgreen1.png)
+
+## vCenter Deploy error
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/vcenterdeploy1.png)
+
 
 
 
