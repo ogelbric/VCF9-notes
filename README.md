@@ -345,6 +345,28 @@ I set the modes on the ESXi servers as well
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/vcenterdeploy1.png)
 
+The log reveals: 
+
+```
+cd /var/log/vmware/vcf/domainmanager/ci-installer-04-06-25-19-58-699/workflow_1749067105841
+
+cat vcsa-cli-installer.log
+```
+
+
+```
+2025-06-04 19:59:34,815 - vCSACliInstallLogger - INFO - OVF Tool: Opening VI target: vi://vcf-esxi3.lab.local:443/
+2025-06-04 19:59:36,845 - vCSACliInstallLogger - INFO - OVF Tool: Deploying to VI: vi://vcf-esxi3.lab.local:443/
+2025-06-04 20:02:50,854 - vCSACliInstallLogger - INFO - OVF Tool: Transfer Completed
+2025-06-04 20:02:53,057 - vCSACliInstallLogger - INFO - OVF Tool: Powering on VM: vcf-vcenter
+2025-06-04 20:02:53,398 - vCSACliInstallLogger - INFO - OVF Tool: Task Failed
+2025-06-04 20:02:53,415 - vCSACliInstallLogger - ERROR - Error: OVF Tool: Error: Task failed on server: This host does not support Intel VT-x.
+2025-06-04 20:02:53,432 - vCSACliInstallLogger - INFO - OVF Tool: Error: Task failed on server: This host does not support Intel VT-x.
+2025-06-04 20:02:55,379 - vCSACliInstallLogger - INFO - OVF Tool: Deleting VM: vcf-vcenter
+2025-06-04 20:02:56,303 - vCSACliInstallLogger - ERROR - Error: OVF Tool: Completed with errors
+2025-06-04 20:02:56,323 - vCSACliInstallLogger - INFO - OVF Tool: Completed with errors
+2025-06-04 20:02:56,342 - vCSACliInstallLogger - ERROR - Deployment failed. OVF Tool return error code: 1
+```
 
 
 
