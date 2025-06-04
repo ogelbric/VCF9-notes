@@ -311,3 +311,8 @@ vmk0
 
 ```
 
+I set the modes on the ESXi servers as well 
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esxihostaccept1.png)
+
+
