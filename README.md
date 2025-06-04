@@ -368,5 +368,8 @@ cat vcsa-cli-installer.log
 2025-06-04 20:02:56,342 - vCSACliInstallLogger - ERROR - Deployment failed. OVF Tool return error code: 1
 ```
 
+## Trying to overcome this error by enabeling hardware virtualisation
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/hardvirt1.png)
 
 
