@@ -193,6 +193,9 @@ On each ESXi server run
 
 ```
 esxcli software acceptance set --level CommunitySupported
+esxcli software vib install -v /tmp/nested-vsan-esa-mock-hw.vib --no-sig-check
+
+/etc/init.d/vsanmgmtd restart
 
 
 
