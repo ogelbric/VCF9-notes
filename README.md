@@ -285,3 +285,8 @@ vmnic4  0000:02:06.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:8c:8a 9000  
 vmnic5  0000:02:07.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:25:3f 9000   VMware Inc. vmxnet3 Virtual Ethernet Controller
 ```
 
+```
+esxcli network ip interface set -i vmk0 -m 9000
+[root@vcf-esxi1:~] esxcli network ip interface list
+```
+
