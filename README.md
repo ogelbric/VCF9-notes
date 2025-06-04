@@ -178,3 +178,8 @@ https://williamlam.com/2025/02/vsan-esa-hardware-mock-vib-for-physical-esxi-depl
 Downloaded vib from here:
 
 https://github.com/lamw/nested-vsan-esa-mock-hw-vib/releases
+
+SCP vib to all ESXi servers (turn on ssh) 
+scp nested-vsan-esa-mock-hw.vib root@192.168.1.51:/tmp/.
+scp nested-vsan-esa-mock-hw.vib root@192.168.1.52:/tmp/.
+scp nested-vsan-esa-mock-hw.vib root@192.168.1.53:/tmp/.
