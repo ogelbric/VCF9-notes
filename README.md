@@ -253,3 +253,6 @@ sendto() failed (Message too long)
 3 packets transmitted, 0 packets received, 100% packet loss
 
 ```
+Windows box is on all these networks 
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/windowsnetworks1.png)
