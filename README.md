@@ -180,6 +180,12 @@ Downloaded vib from here:
 https://github.com/lamw/nested-vsan-esa-mock-hw-vib/releases
 
 SCP vib to all ESXi servers (turn on ssh) 
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ssh1.png)
+
+
 scp nested-vsan-esa-mock-hw.vib root@192.168.1.51:/tmp/.
 scp nested-vsan-esa-mock-hw.vib root@192.168.1.52:/tmp/.
 scp nested-vsan-esa-mock-hw.vib root@192.168.1.53:/tmp/.
+
+
