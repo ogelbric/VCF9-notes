@@ -215,3 +215,6 @@ For good measure I restarted the vsan mgt
 ```
 /etc/init.d/vsanmgmtd restart
 ```
+Bingo - William Lam stuff works !
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/esa-works.png)
