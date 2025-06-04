@@ -273,4 +273,15 @@ Base switch shows me MTU 9000
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/makesure2.png)
 
 
+Looks like I found part of the issue 
+```
+esxcfg-nics -l
+Name    PCI          Driver      Link Speed      Duplex MAC Address       MTU    Description
+vmnic0  0000:02:01.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:78:3b 9000   VMware Inc. vmxnet3 Virtual Ethernet Controller
+vmnic1  0000:02:03.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:1c:73 1500   VMware Inc. vmxnet3 Virtual Ethernet Controller
+vmnic2  0000:02:04.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:3c:f8 1500   VMware Inc. vmxnet3 Virtual Ethernet Controller
+vmnic3  0000:02:05.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:e8:59 9000   VMware Inc. vmxnet3 Virtual Ethernet Controller
+vmnic4  0000:02:06.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:8c:8a 9000   VMware Inc. vmxnet3 Virtual Ethernet Controller
+vmnic5  0000:02:07.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:25:3f 9000   VMware Inc. vmxnet3 Virtual Ethernet Controller
+```
 
