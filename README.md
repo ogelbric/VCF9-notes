@@ -288,5 +288,26 @@ vmnic5  0000:02:07.0 nvmxnet3    Up   10000Mbps  Full   00:50:56:9f:25:3f 9000  
 ```
 esxcli network ip interface set -i vmk0 -m 9000
 [root@vcf-esxi1:~] esxcli network ip interface list
+esxcli network ip interface list
+vmk0
+   Name: vmk0
+   MAC Address: 00:50:56:9f:78:3b
+   Enabled: true
+   Portset: vSwitch0
+   Portgroup: Management Network
+   Netstack Instance: defaultTcpipStack
+   VDS Name: N/A
+   VDS UUID: N/A
+   VDS Port: N/A
+   VDS Connection: -1
+   Opaque Network ID: N/A
+   Opaque Network Type: N/A
+   External ID: N/A
+   MTU: 9000
+   TSO MSS: 65535
+   RXDispQueue Size: 4
+   Port ID: 67108875
+   URPF: 0
+
 ```
 
