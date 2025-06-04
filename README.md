@@ -210,4 +210,8 @@ Changed my 2 Disks x # ESXi servers to NVMe controller (Created the controller f
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/disk2.png)
 
+For good measure I restarted the vsan mgt
 
+```
+/etc/init.d/vsanmgmtd restart
+```
