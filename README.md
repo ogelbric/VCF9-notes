@@ -379,6 +379,10 @@ cat vcsa-cli-installer.log
 ## SDDC manager get deployed but the deleted and re-deployed about 3-4 times 
 
 ```
+SDDC Manager services did not start. Check logs for more details. Reference Token: FS5SKM
+```
+
+```
 Error logs:
 /var/log/vmware/vcf/commonsvcs/vcf-commonsvcs.log
 /var/log/vmware/vcf/domainmanager/domainmanager.log
