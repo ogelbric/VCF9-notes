@@ -372,4 +372,10 @@ cat vcsa-cli-installer.log
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/hardvirt1.png)
 
+## vCenter is up and deployed and it loaded one ESXi host (not sure why not the other 2) 
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/oneesxihost1.png)
+
+
+
 
