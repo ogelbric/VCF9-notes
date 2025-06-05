@@ -376,6 +376,18 @@ cat vcsa-cli-installer.log
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/oneesxihost1.png)
 
+## SDDC manager get deployed but the deleted and re-deployed about 3-4 times 
+
+```
+Error logs:
+/var/log/vmware/vcf/commonsvcs/vcf-commonsvcs.log
+/var/log/vmware/vcf/domainmanager/domainmanager.log
+/var/log/vmware/vcf/operationsmanager/operationsmanager.log
+/var/log/vmware/vcf/lcm/lcm.log
+
+```
+``` Have not found anything
+```
 
 
 
