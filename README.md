@@ -393,6 +393,12 @@ Error logs:
 ```
 Have not found anything ... still looking
 ```
+```
+Looks like I have fallen into this scenario
+Case-Sensitive Verification:
+.
+Some certificate verification processes, especially for SANs, can be case-sensitive.
+```
 
 
 
