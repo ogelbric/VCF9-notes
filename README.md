@@ -416,6 +416,8 @@ systemctl start domainmanager
 
 tail -f /var/log/vmware/vcf/domainmanager/domainmanager.log
 
+systemctl restart sddc-manager-ui-db
+systemctl restart sddc-manager-ui-app
 
 ```
 
