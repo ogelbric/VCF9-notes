@@ -409,4 +409,13 @@ Some certificate verification processes, especially for SANs, can be case-sensit
 ```
 
 
+SDDC manager trouble shooting
+```
+systemctl stop domainmanager
+systemctl start domainmanager
+
+tail -f /var/log/vmware/vcf/domainmanager/domainmanager.log
+
+
+```
 
