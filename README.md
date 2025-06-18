@@ -421,3 +421,14 @@ systemctl restart sddc-manager-ui-app
 
 ```
 
+## Success 
+```
+DNS entry changed to external adress: 10.160.53.11
+Made sure all switches were on MTU 9000 (Nested and not nested)
+NTP running on all ESXi servers
+2 partitions for vSAN
+```
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/s1.png)
+
+
