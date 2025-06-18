@@ -431,6 +431,10 @@ Secure boot disabled (settings on the VM(s)) for the ESXi servers (created stran
 Snapshot'ed the ESXi servers with the VCF installer installed and all bianries downloaded fromd depot for faster cycle times
 
 ```
+Sec boot
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/secboot.png)
+
 VCF Installer
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ins1.png)
