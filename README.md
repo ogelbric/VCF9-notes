@@ -427,8 +427,19 @@ DNS entry changed to external adress: 10.160.53.11
 Made sure all switches were on MTU 9000 (Nested and not nested)
 NTP running on all ESXi servers
 2 partitions for vSAN
-```
+Secure boot disabled (settings on the VM(s)) for the ESXi servers (created strange errors for me in the neted env)
+Snapshot'ed the ESXi servers with the VCF installer installed and all bianries downloaded fromd depot for faster cycle times
 
+```
+VCF Installer
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/ins1.png)
+
+Validate
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/s0.png)
+
+Deployed
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/s1.png)
 
 
