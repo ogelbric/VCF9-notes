@@ -452,6 +452,65 @@ Json file
 {"sddcId":"vcf-mgt-dom1","workflowType":"VCF","hostSpecs":[{"hostname":"vcf-esxi1.lab.local","credentials":{"username":"root","password":""},"sslThumbprint":"33:3A:1F:B3:5C:D3:D7:F7:21:2C:B8:6F:D9:C0:BD:57:4E:8B:7F:31:6A:E7:9C:EA:97:79:E2:1A:FC:67:D1:D5"},{"hostname":"vcf-esxi2.lab.local","credentials":{"username":"root","password":""},"sslThumbprint":"EB:4F:52:43:F1:67:9E:FB:37:19:3F:02:36:9D:53:8B:1F:F8:E4:15:9C:5E:51:2D:9F:03:C8:BD:EA:20:B0:74"},{"hostname":"vcf-esxi3.lab.local","credentials":{"username":"root","password":""},"sslThumbprint":"33:32:7C:88:C7:72:14:CD:D8:32:20:03:EE:76:4D:B8:8D:D9:81:20:46:26:B4:95:A1:EC:8B:E1:0B:2D:8C:A4"}],"version":"9.0.0.0","vcenterSpec":{"vcenterHostname":"vcf-vcenter.lab.local","rootVcenterPassword":"","vmSize":"small","ssoDomain":"vsphere.local","adminUserSsoPassword":"","useExistingDeployment":false},"clusterSpec":{"datacenterName":"vcf-mgt-dom1-dc01","clusterName":"vcf-mgt-dom1-cl01"},"dvsSpecs":[{"dvsName":"vcf-mgt-dom1-cl01-vds01","networks":["MANAGEMENT","VM_MANAGEMENT","VMOTION","VSAN"],"mtu":9000,"nsxtSwitchConfig":{"transportZones":[{"name":"VCF-Created-Overlay-Zone","transportType":"OVERLAY"}]},"vmnicsToUplinks":[{"id":"vmnic0","uplink":"uplink1"},{"id":"vmnic1","uplink":"uplink2"}],"nsxTeamings":[{"policy":"LOADBALANCE_SRCID","activeUplinks":["uplink1","uplink2"]}]}],"nsxtSpec":{"nsxtManagers":[{"hostname":"vcf-nsx1.lab.local"}],"nsxtManagerSize":"large","vipFqdn":"vcf-nsx-vip.lab.local","rootNsxtManagerPassword":"","nsxtAdminPassword":"","nsxtAuditPassword":"","transportVlanId":0,"ipAddressPoolSpec":{"name":"TZ-IP-Pool","description":"TZ-IP-Pool-Description","subnets":[{"ipAddressPoolRanges":[{"start":"192.168.6.100","end":"192.168.6.200"}],"cidr":"192.168.6.0/24","gateway":"192.168.6.1"}]},"skipNsxOverlayOverManagementNetwork":true,"useExistingDeployment":false},"networkSpecs":[{"networkType":"MANAGEMENT","subnet":"192.168.1.0/24","gateway":"192.168.1.1","vlanId":0,"mtu":9000,"teamingPolicy":"loadbalance_loadbased","activeUplinks":["uplink1","uplink2"],"portGroupKey":"vcf-mgt-dom1-cl01-vds01-pg-esx-mgmt"},{"networkType":"VM_MANAGEMENT","subnet":"192.168.1.0/24","gateway":"192.168.1.1","vlanId":0,"mtu":9000,"teamingPolicy":"loadbalance_loadbased","activeUplinks":["uplink1","uplink2"],"portGroupKey":"vcf-mgt-dom1-cl01-vds01-pg-vm-mgmt"},{"networkType":"VMOTION","subnet":"192.168.4.0/24","gateway":"192.168.4.1","includeIpAddressRanges":[{"startIpAddress":"192.168.4.100","endIpAddress":"192.168.4.200"}],"vlanId":0,"mtu":9000,"teamingPolicy":"loadbalance_loadbased","activeUplinks":["uplink1","uplink2"],"portGroupKey":"vcf-mgt-dom1-cl01-vds01-pg-vmotion"},{"networkType":"VSAN","subnet":"192.168.5.0/24","gateway":"192.168.5.1","includeIpAddressRanges":[{"startIpAddress":"192.168.5.100","endIpAddress":"192.168.5.200"}],"vlanId":0,"mtu":9000,"teamingPolicy":"loadbalance_loadbased","activeUplinks":["uplink1","uplink2"],"portGroupKey":"vcf-mgt-dom1-cl01-vds01-pg-vsan"}],"dnsSpec":{"subdomain":"lab.local","nameservers":["10.160.53.11"]},"ntpServers":["ntp.broadcom.net"],"sddcManagerSpec":{"rootPassword":"","hostname":"vcf-installer.lab.local","sshPassword":"","localUserPassword":"","useExistingDeployment":true},"managementPoolName":"vcf-mgt-dom1-np01","ceipEnabled":false,"datastoreSpec":{"vsanSpec":{"datastoreName":"vcf-mgt-dom1-cl01-ds-vsan01","esaConfig":{"enabled":true}}},"vcfOperationsFleetManagementSpec":{"hostname":"vcf-fleetmgt.lab.local","rootUserPassword":"","adminUserPassword":"","useExistingDeployment":false},"vcfOperationsSpec":{"nodes":[{"hostname":"vcf-operations1.lab.local","rootUserPassword":"","type":"master"}],"adminUserPassword":"","applianceSize":"small","useExistingDeployment":false},"vcfOperationsCollectorSpec":{"hostname":"vcf-operations4.lab.local","rootUserPassword":"","applianceSize":"small","useExistingDeployment":false},"vcfAutomationSpec":{"hostname":"vcf-automation-vip.lab.local","adminUserPassword":"","ipPool":["192.168.1.31","192.168.1.32"],"internalClusterCidr":"198.18.0.0/15","nodePrefix":"autoprefix1","useExistingDeployment":false},"vcfInstanceName":"vcfinstname1"}
 ```
 
+# VCF CLI commands 
+
+vcf context create --endpoint=192.168.2.220 --insecure-skip-tls-verify
+
+```
+? Provide a name for the context:  k1
+[i] Auth type vSphere SSO detected. Proceeding for authentication...
+? Provide Username:  administrator@vsphere.local
+
+? Provide Username:  administrator@vsphere.local
+Provide Password:
+
+Logged in successfully.
+
+You have access to the following contexts:
+   k1
+   k1:namespace1000
+   k1:svc-tkg-domain-c10
+   k1:svc-velero-domain-c10
+
+If the namespace context you wish to use is not in this list, you may need to
+refresh the context again, or contact your cluster administrator.
+
+To change context, use `vcf context use <context_name>`
+[ok] successfully created context: k1
+[ok] successfully created context: k1:svc-tkg-domain-c10
+[ok] successfully created context: k1:svc-velero-domain-c10
+[ok] successfully created context: k1:namespace1000
+
+```
+
+vcf context list
+
+```
+  NAME                      CURRENT  TYPE
+  k1                        false    kubernetes
+  k1:namespace1000          false    kubernetes
+  k1:svc-tkg-domain-c10     false    kubernetes
+  k1:svc-velero-domain-c10  false    kubernetes
+```
+
+vcf context use k1
+
+```
+[ok] Token is still active. Skipped the token refresh for context "k1"
+[i] Successfully activated context 'k1' (Type: kubernetes)
+[i] Fetching recommended plugins for active context 'k1'...
+[i] Installing the following plugins recommended by context 'k1':
+  NAME                INSTALLING
+  cluster             v3.3.1
+  kubernetes-release  v3.3.1
+  namespaces          v9.0.0
+  package             v3.3.1
+  registry-secret     v3.3.1
+  vm                  v9.0.0
+```
+
+vcf plugin install cluster
+
 
 # Cluster yaml for vCenter 9 
 
