@@ -509,7 +509,17 @@ vcf context use k1
   vm                  v9.0.0
 ```
 
+Load Cluster plugin
+
+```
 vcf plugin install cluster
+```
+
+delete a cluster
+
+```
+.\..\..\vcf.exe cluster delete cluster3 -n namespace1000
+```
 
 
 # Cluster yaml for vCenter 9 
