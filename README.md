@@ -600,6 +600,8 @@ The same workload cluster login with VCF commands
 
 ```
 vcf context create --endpoint 192.168.2.220 --username administrator@vsphere.local --workload-cluster-name cluster3 --workload-cluster-namespace namespace1000 --insecure-skip-tls-verify
+```
+```
 ? Provide a name for the context:  k2
 
 ? Provide a name for the context:  k2
@@ -620,10 +622,11 @@ refresh the context again, or contact your cluster administrator.
 To change context, use `vcf context use <context_name>`
 [ok] successfully created context: k2
 [ok] successfully created context: k2:cluster3
-
-
+```
+```
 vcf context use k2:cluster3
-
+```
+```
 kubectl get nodes
 NAME                                     STATUS   ROLES           AGE   VERSION
 cluster3-k9n6j-r8ssz                     Ready    control-plane   15m   v1.32.0+vmware.6-fips
