@@ -518,7 +518,7 @@ vcf plugin install cluster
 delete a cluster
 
 ```
-.\..\..\vcf.exe cluster delete cluster3 -n namespace1000
+vcf cluster delete cluster3 -n namespace1000
 ```
 
 
