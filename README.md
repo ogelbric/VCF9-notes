@@ -574,3 +574,31 @@ spec:
           name: etcd
           storageClass: management-storage-policy-regular
 ```
+
+More VCF commands
+```
+vcf context  use k1    (Works as login as well) 
+
+vcf cluster create  cluster3 -n namespace1000 -f ./downloads/cluster3.yaml
+ 
+vcf cluster list -A
+  NAME      NAMESPACE      STATUS    CONTROLPLANE  WORKERS  KUBERNETES             KUBERNETESRELEASE
+  cluster3  namespace1000  creating  0/1           0/1      v1.32.0+vmware.6-fips  v1.32.0---vmware.6-fips-vkr.2
+```
+
+The kubectl commands work as well
+```
+kubectl apply -f ./downloads/cluster3.yaml -n namespace1000
+cluster.cluster.x-k8s.io/cluster3 created
+
+kubectl config use-context k1:namespace1000
+
+kubectl vsphere login --server 192.168.2.220 --vsphere-username administrator@vsphere.local --tanzu-kubernetes-cluster-namespace namespace1000 --tanzu-kubernetes-cluster-name cluster3 --insecure-skip-tls-verify
+```
+
+
+
+
+
+
+
