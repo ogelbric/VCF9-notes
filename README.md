@@ -596,6 +596,41 @@ kubectl config use-context k1:namespace1000
 kubectl vsphere login --server 192.168.2.220 --vsphere-username administrator@vsphere.local --tanzu-kubernetes-cluster-namespace namespace1000 --tanzu-kubernetes-cluster-name cluster3 --insecure-skip-tls-verify
 ```
 
+The same workload cluster login with VCF commands 
+
+```
+vcf context create --endpoint 192.168.2.220 --username administrator@vsphere.local --workload-cluster-name cluster3 --workload-cluster-namespace namespace1000 --insecure-skip-tls-verify
+? Provide a name for the context:  k2
+
+? Provide a name for the context:  k2
+Provide Password:
+
+
+
+[i] Logging in to Kubernetes cluster (cluster3) (namespace1000)
+[i] Successfully logged in to Kubernetes cluster 192.168.2.223
+
+You have access to the following contexts:
+   k2
+   k2:cluster3
+
+If the namespace context you wish to use is not in this list, you may need to
+refresh the context again, or contact your cluster administrator.
+
+To change context, use `vcf context use <context_name>`
+[ok] successfully created context: k2
+[ok] successfully created context: k2:cluster3
+
+
+vcf context use k2:cluster3
+
+kubectl get nodes
+NAME                                     STATUS   ROLES           AGE   VERSION
+cluster3-k9n6j-r8ssz                     Ready    control-plane   15m   v1.32.0+vmware.6-fips
+cluster3-node-pool-1-jpt9c-r4knr-jrb85   Ready    <none>          11m   v1.32.0+vmware.6-fips
+
+```
+
 
 
 
