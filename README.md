@@ -634,6 +634,11 @@ cluster3-node-pool-1-jpt9c-r4knr-jrb85   Ready    <none>          11m   v1.32.0+
 
 ```
 
+Context for cluster refresh
+```
+vcf contexts refresh --insecure-skip-tls-verify
+```
+
 
 
 
