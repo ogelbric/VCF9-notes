@@ -654,4 +654,12 @@ http://vcf-automation-vip.lab.local
 
 
 
+# Notes
+```
+
+kubectl vsphere login --server 192.168.2.220 --vsphere-username administrator@vsphere.local --insecure-skip-tls-verify
+
+kubectl vsphere login --server 192.168.2.220 --vsphere-username administrator@vsphere.local --tanzu-kubernetes-cluster-namespace namespace1000 --tanzu-kubernetes-cluster-name cluster3 --insecure-skip-tls-verify
+
+```
 
