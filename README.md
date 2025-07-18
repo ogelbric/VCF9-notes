@@ -641,6 +641,16 @@ vcf contexts refresh --insecure-skip-tls-verify
 
 
 
+# VCF-A
+
+Provider Interface
+```
+https://vcf-automation-vip.lab.local/provider
+```
+User Interface
+```
+http://vcf-automation-vip.lab.local
+```
 
 
 
