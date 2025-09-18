@@ -455,6 +455,8 @@ Json file
 # VCF CLI commands 
 
 vcf context create --endpoint=192.168.2.220 --insecure-skip-tls-verify
+or
+vcf context create --endpoint=192.168.2.220 --insecure-skip-tls-verify --auth-type basic
 
 ```
 ? Provide a name for the context:  k1
