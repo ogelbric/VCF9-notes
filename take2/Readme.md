@@ -27,6 +27,9 @@ Restart the LCM app
 service lcm restart
 ```
 
+## Log into the jumphost https repo
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/offline_depot.png)
 
 
 
