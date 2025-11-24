@@ -4,7 +4,7 @@
 
 ```
 
-Jump to SDDC Installer VM Console
+Jump to SDDC Installer VM Console and enable ssh root login
 vi /etc/ssh/sshd_config
 Change this line: PermitRootLogin yes
 systemctl restart sshd
