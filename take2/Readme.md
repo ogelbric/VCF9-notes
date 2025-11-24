@@ -1,6 +1,6 @@
 # Off Line install VCF stack (take 2) 
 
-## Set up of download images
+## (1) Set up of download images
 
 ### Jump host needs a bigger disk to hold all images
 
@@ -117,7 +117,7 @@ service lcm restart
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/SDDC_Down_Load_ALL.png)
 
 
-## Install VCF with SDDC manager / installer
+## (2) Install VCF with SDDC manager / installer
 
 
 
