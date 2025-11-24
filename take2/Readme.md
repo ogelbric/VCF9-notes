@@ -107,5 +107,9 @@ service lcm restart
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/offline_depot.png)
 
 
+## Nested ESX hosts (3) all look like this
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/ESX_Hosts.png)
+
 
 ### Take 2
