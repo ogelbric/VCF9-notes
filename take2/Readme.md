@@ -1,5 +1,26 @@
 # Off Line install VCF stack (take 2) 
 
+## Moving the downloaded (supposrt.broadcom.com) software into the correct folder structure 
+```
+sudo su
+mv /bigdisk/orf/VMware-VMvisor-Installer-9.0.1.0.24957456.x86_64.iso /bigdisk/VCF9/PROD/COMP/ESX_HOST/.
+mv /bigdisk/orf/VMware-VCSA-all-9.0.1.0.24957454.iso /bigdisk/VCF9/PROD/COMP/VCENTER/.
+mv /bigdisk/orf/VCF-SDDC-Manager-Appliance-9.0.1.0.24962180.ova /bigdisk/VCF9/PROD/COMP/SDDC_MANAGER_VCF/.
+mv /bigdisk/orf/nsx-unified-appliance-9.0.1.0.24952114.ova /bigdisk/VCF9/PROD/COMP/NSXT_MANAGER/.
+mv /bigdisk/orf/vmsp-vcfa-combined-9.0.1.0.24965341.tar /bigdisk/VCF9/PROD/COMP/VRA/.
+mv /bigdisk/orf/Operations-Appliance-9.0.1.0.24960351.ova /bigdisk/VCF9/PROD/COMP/VROPS/.
+
+
+mv /bigdisk/orf/VCF-OPS-Lifecycle-Manager-Appliance-9.0.1.0.24960371.ova /bigdisk/VCF9/PROD/COMP/VRSLCM/VCF-OPS-Lifecycle-Manager-Appliance-9.0.1.0.24960371.ova
+mkdir /bigdisk/VCF9/PROD/COMP/VCF_OPS_CLOUD_PROXY
+mv /bigdisk/orf/Operations-Cloud-Proxy-9.0.1.0.24960349.ova /bigdisk/VCF9/PROD/COMP/VCF_OPS_CLOUD_PROXY/Operations-Cloud-Proxy-9.0.1.0.24960349.ova
+
+mkdir /bigdisk/VCF9/PROD/COMP/NSX_T_MANAGER
+mv /bigdisk/VCF9/PROD/COMP/NSXT_MANAGER/nsx-unified-appliance-9.0.1.0.24952114.ova /bigdisk/VCF9/PROD/COMP/NSX_T_MANAGER/nsx-unified-appliance-9.0.1.0.24952114.ova
+
+```
+
+
 ## Cert for SDDC manager from jump box
 
 ```
