@@ -119,7 +119,16 @@ service lcm restart
 
 ## (2) Install VCF with SDDC manager / installer
 
+### Install Error with ESX host
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/Install_Error1.png)
+
+### Resolution
+
+```
+Not sure why several hosts are local host when I gave them a host name and domain name 
 
 
+```
 
 
