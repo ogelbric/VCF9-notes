@@ -1,6 +1,8 @@
 # Off Line install VCF stack (take 2) 
 
-## Jump host needs a bigger disk to hold all images
+## Set up of download images
+
+### Jump host needs a bigger disk to hold all images
 
 ```
 Add a disk to your linux Jump host in vCenter !!  (re-boot vm?)
@@ -28,7 +30,7 @@ sudo blkid /dev/sdb1
 sudo vi /etc/vfstab
 
 ```
-## Jump Host cert
+### Jump Host cert
 
 ```
 #Selfsigend cert generation
@@ -37,7 +39,7 @@ openssl req -new -key key.pem -out csr.pem -subj "/C=US/ST=CA/L=Dallas/O=OrfGelb
 openssl x509 -req -in csr.pem -signkey key.pem -out cert.crt -days 365
 ```
 
-## Jump host web server 
+### Jump host web server 
 
 ```
 #Webserver
@@ -45,13 +47,13 @@ python3 http_server_auth.py --bind 127.0.0.1 --user vcf --password vcf123! --por
 
 ```
 
-## Off line depo meta data link for the directoy structure
+### Off line depo meta data link for the directoy structure
 
 ```
 https://support.broadcom.com/group/ecx/productfiles?displayGroup=VMware%20Cloud%20Foundation%209&release=9.0.1.0&os=&servicePk=534266&language=EN&groupId=534924&viewGroup=true
 ```
 
-## Moving the downloaded (supposrt.broadcom.com) software into the correct folder structure 
+### Moving the downloaded (supposrt.broadcom.com) software into the correct folder structure 
 ```
 sudo su
 mv /bigdisk/orf/VMware-VMvisor-Installer-9.0.1.0.24957456.x86_64.iso /bigdisk/VCF9/PROD/COMP/ESX_HOST/.
@@ -68,11 +70,10 @@ mv /bigdisk/orf/Operations-Cloud-Proxy-9.0.1.0.24960349.ova /bigdisk/VCF9/PROD/C
 
 mkdir /bigdisk/VCF9/PROD/COMP/NSX_T_MANAGER
 mv /bigdisk/VCF9/PROD/COMP/NSXT_MANAGER/nsx-unified-appliance-9.0.1.0.24952114.ova /bigdisk/VCF9/PROD/COMP/NSX_T_MANAGER/nsx-unified-appliance-9.0.1.0.24952114.ova
-
 ```
 
 
-## Cert for SDDC manager from jump box
+### Cert for SDDC manager from jump box
 
 ```
 
@@ -102,18 +103,23 @@ Restart the LCM app
 service lcm restart
 ```
 
-## Log into the jumphost https repo
+### Log into the jumphost https repo
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/offline_depot.png)
 
 
-## Nested ESX hosts (3) all look like this
+### Nested ESX hosts (3) all look like this
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/ESX_Hosts.png)
 
-## All downloads are on the SDDC manager
+### All downloads are on the SDDC manager
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/SDDC_Down_Load_ALL.png)
 
 
-### Take 2
+## Install VCF with SDDC manager / installer
+
+
+
+
+
