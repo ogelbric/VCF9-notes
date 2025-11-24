@@ -127,8 +127,24 @@ service lcm restart
 
 ```
 Not sure why several hosts are local host when I gave them a host name and domain name 
+To re-generate ESXi host certificate to match subject alternate name (SAN) with ESXI host FQDN , refer the following steps. 
 
+Log in to the ESXi Host Client.
+Enable SSH on the ESXi host.
+In the navigation pane, click Manage and click the Services tab.
+Select the TSM-SSH service and click Start if not started.
+Log in to the ESXi host using an SSH client such as Putty.
+Regenerate the self-signed certificate by executing the following command
+/sbin/generate-certificates
 
+Reboot the ESXi to apply the changes
+reboot
+```
+
+### NTP fix
+
+```
+I also fixed NTP for all hosts to start with server and set it to ntp.broadcom.net
 ```
 
 
