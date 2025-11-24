@@ -111,5 +111,9 @@ service lcm restart
 
 ![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/ESX_Hosts.png)
 
+## All downloads are on the SDDC manager
+
+![Version](https://github.com/ogelbric/VCF9-notes/blob/main/take2/SDDC_Down_Load_ALL.png)
+
 
 ### Take 2
