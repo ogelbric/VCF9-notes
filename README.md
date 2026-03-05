@@ -90,6 +90,12 @@ esxcli system hostname set --host vcf-esx3
 esxcli system hostname set --domain lab.local
 esxcli system hostname set --fqdn vcf-esx3.lab.local
 
+esxcli system hostname get
+   Domain Name: lab.local
+   Fully Qualified Domain Name: vcf-esx3.lab.local
+   Host Name: vcf-esx3
+
+
 ```
 
 
