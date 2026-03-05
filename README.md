@@ -86,7 +86,10 @@ Repeat this procedure for all remaining hosts and restart the task on cloud buil
 ```
 Setting hostname
 ```
-esxcli system hostname set --host vcf-esxi2.lab.local
+esxcli system hostname set --host vcf-esx3
+esxcli system hostname set --domain lab.local
+esxcli system hostname set --fqdn vcf-esx3.lab.local
+
 ```
 
 
