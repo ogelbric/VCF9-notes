@@ -75,6 +75,10 @@ Regenerate the self-signed certificate by executing the following command
 Reboot the ESXi to apply the changes
 reboot
 
+Other option Potentually vs. reboot
+/etc/init.d/hostd restart
+/etc/init.d/vpxa restart
+
 Verify the correct hostname is listed (log back in Yes turn on ssh again!) .
 openssl x509 -in /etc/vmware/ssl/rui.crt -noout -text
 X509v3 Subject Alternative Name should match the ESXi host FQDN
